@@ -512,9 +512,9 @@
 <li>列表被p分成两份，左边的都比p小，右边的都比p大；</li>
 <li>递归完成排序。</li>
 </ul>
-<h2 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h2><h5 id="框架："><a href="#框架：" class="headerlink" title="框架："></a>框架：</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">quick_sort</span>(<span class="params">li,left,right</span>):</span></span><br><span class="line">    <span class="string">&#x27;&#x27;&#x27;保证排序区域(left,right)至少有两个元素&#x27;&#x27;&#x27;</span></span><br><span class="line">    <span class="keyword">if</span> left &lt; right:</span><br><span class="line">        <span class="string">&#x27;&#x27;&#x27;核心函数partion可以做到第1，2步骤&#x27;&#x27;&#x27;</span></span><br><span class="line">        mid = partion(li, left, right)</span><br><span class="line">        <span class="string">&#x27;&#x27;&#x27;列表第一个元素归位后，继续递归，此时被分成两个部分的左右列表起止分别为(left,mid-1)和(mid+1,right)&#x27;&#x27;&#x27;</span></span><br><span class="line">        quick_sort(li, left, mid-<span class="number">1</span>)</span><br><span class="line">        quick_sort(li, mid+<span class="number">1</span>, right)</span><br><span class="line">    <span class="keyword">return</span> li</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+<h2 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h2><h3 id=""><a href="#" class="headerlink" title=""></a></h3><h4 id="框架："><a href="#框架：" class="headerlink" title="框架："></a>框架：</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">quick_sort</span>(<span class="params">li,left,right</span>):</span></span><br><span class="line">    <span class="string">&#x27;&#x27;&#x27;保证排序区域(left,right)至少有两个元素&#x27;&#x27;&#x27;</span></span><br><span class="line">    <span class="keyword">if</span> left &lt; right:</span><br><span class="line">        <span class="string">&#x27;&#x27;&#x27;核心函数partion可以做到第1，2步骤&#x27;&#x27;&#x27;</span></span><br><span class="line">        mid = partion(li, left, right)</span><br><span class="line">        <span class="string">&#x27;&#x27;&#x27;列表第一个元素归位后，继续递归，此时被分成两个部分的左右列表起止分别为(left,mid-1)和(mid+1,right)&#x27;&#x27;&#x27;</span></span><br><span class="line">        quick_sort(li, left, mid-<span class="number">1</span>)</span><br><span class="line">        quick_sort(li, mid+<span class="number">1</span>, right)</span><br><span class="line">    <span class="keyword">return</span> li</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
 
-<h5 id="核心："><a href="#核心：" class="headerlink" title="核心："></a>核心：</h5><ul>
+<h4 id="核心："><a href="#核心：" class="headerlink" title="核心："></a>核心：</h4><ul>
 <li>取出要归位元素，留出一个空位；</li>
 <li>right从右往左依次判断，只要元素比归为元素小，就把此元素放在空位，此元素位置变为空位；</li>
 <li>left从左往右依次判断，只要元素比归为元素大，就把此元素放在上一步留出的空位上，此元素位置变为空位；</li>
@@ -630,10 +630,10 @@
 </tbody></table>
 <p>​        如上所示，假设归为元素把列表对半分，则需要log16次分完，每一次都要从左往右、从右往左，直到left和right 在中间碰头，也就是说一次归位其实是把整个列表遍历完了。所以每一次需要O(n)的时间复杂度，所以总共时间复杂度为O(nlogn)。</p>
 <p>​        O(1)&lt;O(n)&lt;O(logn)&lt;O(nlogn)&lt;O(n^2)&lt;O(n^2logn)&lt;O(n^3)：所以快排O(nlogn)&lt;冒泡排序O(n^2)</p>
-<h2 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h2><h5 id="最坏情况："><a href="#最坏情况：" class="headerlink" title="最坏情况："></a>最坏情况：</h5><p>​                假如原始列表是倒序，则每次排序只移动一个元素，则要n次才能分完，最坏时间复杂度为O(n^2)。</p>
+<h2 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h2><h3 id="-1"><a href="#-1" class="headerlink" title=""></a></h3><h4 id="最坏情况："><a href="#最坏情况：" class="headerlink" title="最坏情况："></a>最坏情况：</h4><p>​                假如原始列表是倒序，则每次排序只移动一个元素，则要n次才能分完，最坏时间复杂度为O(n^2)。</p>
 <p>解决方法：</p>
 <p>​                随机化快排：归为元素不选第一个位置的元素，而是随机选一个作为归为元素，使得最坏情况概率非常非常小。</p>
-<h5 id="递归："><a href="#递归：" class="headerlink" title="递归："></a>递归：</h5><p>​        需要递归的次数很多，占用内存。</p>
+<h4 id="递归："><a href="#递归：" class="headerlink" title="递归："></a>递归：</h4><p>​        需要递归的次数很多，占用内存。</p>
 
           
         
