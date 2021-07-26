@@ -272,6 +272,336 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://prettyprettyboy.github.io/2021/07/26/%E5%A0%86%E6%8E%92%E5%BA%8F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Zhanye Yang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/touxiang.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小世界">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/07/26/%E5%A0%86%E6%8E%92%E5%BA%8F/" itemprop="url">堆排序</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-07-26T16:01:16+08:00">
+                2021-07-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index">
+                    <span itemprop="name">数据结构与算法笔记</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="堆："><a href="#堆：" class="headerlink" title="堆："></a>堆：</h2><ul>
+<li>堆是一种特殊的完全二叉树；</li>
+<li>大根堆：一棵完全二叉树，满足任意结点都比其子结点大；</li>
+<li>小根堆：一棵完全二叉树，满足任意结点都比其子结点小。</li>
+</ul>
+<h2 id="堆的向下调整："><a href="#堆的向下调整：" class="headerlink" title="堆的向下调整："></a>堆的向下调整：</h2><p>结点左右子树都是堆，但自身不是堆。此时可通过一次向下调整来将其变成堆。</p>
+<p>见图</p>
+<h2 id="堆排序过程："><a href="#堆排序过程：" class="headerlink" title="堆排序过程："></a>堆排序过程：</h2><h3 id=""><a href="#" class="headerlink" title=""></a></h3><ul>
+<li><h4 id="建立堆；"><a href="#建立堆；" class="headerlink" title="建立堆；"></a>建立堆；</h4><ol>
+<li>由下至上观察子堆；</li>
+<li>如果子堆顺序有误，则对子堆做一次向下调整使其有序；</li>
+<li>重复上述步骤，至堆完全有序。</li>
+</ol>
+</li>
+<li><h4 id="得到堆顶元素，为最大元素；"><a href="#得到堆顶元素，为最大元素；" class="headerlink" title="得到堆顶元素，为最大元素；"></a>得到堆顶元素，为最大元素；</h4></li>
+<li><h4 id="去掉堆顶，讲堆的最后一个元素放到堆顶，此时可通过一次堆的向下调整使堆有序；"><a href="#去掉堆顶，讲堆的最后一个元素放到堆顶，此时可通过一次堆的向下调整使堆有序；" class="headerlink" title="去掉堆顶，讲堆的最后一个元素放到堆顶，此时可通过一次堆的向下调整使堆有序；"></a>去掉堆顶，讲堆的最后一个元素放到堆顶，此时可通过一次堆的向下调整使堆有序；</h4></li>
+<li><h4 id="堆顶元素为第二大元素；"><a href="#堆顶元素为第二大元素；" class="headerlink" title="堆顶元素为第二大元素；"></a>堆顶元素为第二大元素；</h4></li>
+<li><h4 id="重复步骤3，直到堆变空。"><a href="#重复步骤3，直到堆变空。" class="headerlink" title="重复步骤3，直到堆变空。"></a>重复步骤3，直到堆变空。</h4></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://prettyprettyboy.github.io/2021/07/26/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E2%80%94%E2%80%94%E6%A0%91/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Zhanye Yang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/touxiang.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小世界">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/07/26/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E2%80%94%E2%80%94%E6%A0%91/" itemprop="url">数据结构与算法——树</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-07-26T15:34:28+08:00">
+                2021-07-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index">
+                    <span itemprop="name">数据结构与算法笔记</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="基本概念："><a href="#基本概念：" class="headerlink" title="基本概念："></a>基本概念：</h2><p>树是一种可以定义递归的数据结构，是由n个结点组成的集合。</p>
+<ul>
+<li>如果n=0，那么这是一棵空树；</li>
+<li>如果n&gt;0，那么存在1个结点作为树的根节点，其他结点可以分为m个集合，每个集合本身又是一棵树。</li>
+</ul>
+<ol>
+<li>根结点、叶结点：一棵树的起始结点为根结点，一个结点没有继续分支，则称为叶结点；</li>
+<li>树的深度：树的最大层数；</li>
+<li>树的度：所有结点的度的最大值；</li>
+<li>子结点、父结点。</li>
+</ol>
+<h2 id="二叉树："><a href="#二叉树：" class="headerlink" title="二叉树："></a>二叉树：</h2><ul>
+<li><p>度不超过2的树；</p>
+</li>
+<li><p>若一个父节点有两个子结点，则被区分为左子结点和右子结点。</p>
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3></li>
+</ul>
+<h4 id="满二叉树："><a href="#满二叉树：" class="headerlink" title="满二叉树："></a>满二叉树：</h4><p>一个二叉树，如果每一层的结点数都达到最大值，则为满二叉树。</p>
+<h4 id="完全二叉树："><a href="#完全二叉树：" class="headerlink" title="完全二叉树："></a>完全二叉树：</h4><p>叶结点只能出现在最下层和次下层，并且最下层结点都集中在该层最左边的若干位置，则为完全二叉树。</p>
+<h4 id="二叉树的存储方式："><a href="#二叉树的存储方式：" class="headerlink" title="二叉树的存储方式："></a>二叉树的存储方式：</h4><ul>
+<li>顺序存储方式*（列表存储、堆排序所用方式）</li>
+<li>链式存储方式</li>
+</ul>
+<h4 id="结点关系："><a href="#结点关系：" class="headerlink" title="结点关系："></a>结点关系：</h4><p>父结点和左子结点关系：i  —&gt;  2i+1</p>
+<p>父结点和右子结点关系：i  —&gt;  2i+2</p>
+<p>左子结点和父结点关系：i  —&gt;  i-1//2</p>
+<p>右子结点和父结点关系：i  —&gt;  i-1//2</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://prettyprettyboy.github.io/2021/07/26/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E2%80%94%E2%80%94%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -711,7 +1041,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -736,7 +1066,7 @@
             <div class="site-state-item site-state-tags">
               
               
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">标签</span>
               
               
